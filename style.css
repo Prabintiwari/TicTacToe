@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    height: 100vh;
+    background:#00b4d8
+
+}
+
+    h1{
+        margin-bottom: 2rem;
+        color: #1b263b;
+    }
+     .container{
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.1rem;
+      }
+     .game{
+        width: 14rem;
+        display: flex;
+        flex-wrap: wrap;    
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+     }
+     .cell{
+        height: 4rem;
+        width: 4rem;
+        font-size: 2rem;
+        border-radius: 1rem;
+        background-color: #ced4da;
+        border: none;
+        box-shadow: 0 3px 15px rgba(0,0,0,0.8);
+     }
+    
+     .msg-container{
+        
+        .msg{     
+            height: 10vh;      
+            color: #ffffc7;
+            font-weight: 700;
+            font-size: 2rem;
+            opacity: 0;
+           
+        }
+        
+     }
+
+.button{
+    margin-top: 2rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    .resetBtn{
+        width: fit-content;
+        background: #03045e;
+        color: #f9f7f7;
+        padding:  .9rem 1rem;
+        border: none;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: 600;
+        position: absolute;
+        top: 0;
+        box-shadow: 0 3px 15px rgba(0,0,0,0.8);
+        transition: all 0.8s ease;
+
+        &:hover{
+            background-color: #b1a7a6;
+            color: #03045e;
+        }
+    }
+
+     .newGame{
+        background: #03045e;
+        color: #f9f7f7;
+        padding:  .9rem 1rem;
+        border: none;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: 600;
+        position: absolute;
+        top: 0;
+        box-shadow: 0 3px 15px rgba(0,0,0,0.8);
+        transition: all 0.8s ease;
+
+        &:hover{
+            background-color: #b1a7a6;
+            color: #03045e;
+        }
+     }
+    
+    
+    
+      
+} 
+.hide{
+    display:none;
+} 
+
+.undo{
+    background: #03045e;
+    color: #f9f7f7;
+    padding:  .9rem 1rem;
+    border: none;
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    position: absolute;
+    top: 40%;
+    right: 25%;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.8);
+    transition: all 0.8s ease;
+    &:hover{
+        background-color: #b1a7a6;
+        color: #03045e;
+    }
+}
+
+ .scoreboard{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    position: absolute;
+    top: 23%;
+    left: 20%;
+    color: bisque;
+  
+ }
+
+  
