@@ -67,8 +67,8 @@ const checkWinner = () => {
             cells.forEach((cell) => {
                 cell.disabled = true;
 
-                showWinner(cells[condition[0]].innerHTML);
             });
+            showWinner(cells[condition[0]].innerHTML);
         }
       
     }
@@ -86,11 +86,11 @@ const showWinner = (winner) => {
 
     if (winner === 'X') {
        XWins = XWins + 1;
-       XWinsDisplay.innerHTML = ` ${XWins/9}`;
+       XWinsDisplay.innerHTML = ` ${XWins}`;
        console.log(`${XWins}`);
    } else if (winner === 'O') {
        OWins++; 
-       OWinsDisplay.innerHTML = `${OWins/9}`;
+       OWinsDisplay.innerHTML = `${OWins}`;
    }
    
 }
@@ -108,7 +108,7 @@ function CheckDraw() {
         currentPlayer = !currentPlayer;
         cells.forEach((cell) => {
             Tie++;
-            TieDisplay.textContent = `${Tie/9}`;
+            TieDisplay.textContent = `${Tie}`;
             cell.disabled = true;
             msg.innerHTML = `It's a tie!`;
             msg.style.opacity = 1;
